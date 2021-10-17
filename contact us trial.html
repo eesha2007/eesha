@@ -1,0 +1,218 @@
+<html>
+<head>
+	<title>contact us</title>
+	<script>
+	function validate()
+	{
+	var name1=document.getElementById("first_name").value;
+	var phone1=document.getElementById("phone").value;
+	var email_id1=document.getElementById("email_id").value;
+	var message1=document.getElementById("message").value;
+	//alert(name1);
+	if(name1.length<5)
+	{
+	text="please enter your full name";
+	error_message.innerHTML=text;
+	return false;
+	}
+	
+	if(phone1.length!=10||isNaN(phone1))
+	{
+	text="please enter correct phone number";
+	error_message.innerHTML=text;
+	return false;
+	}
+
+	if(email_id1.indexOf("@")==-1||email_id1.length<6)
+	{
+	text="please enter the correct email id";
+	error_message.innerHTML=text;
+	return false;
+	}
+	
+	if(message1.length<10)
+	{
+	text="please enter your full message";
+	error_message.innerHTML=text;
+	return false;
+	}
+	
+	alert("form is successfully submitted");
+	return true;
+	}
+	</script>
+
+
+<style>
+	.header{background-color:black;
+	text-align:center;
+	padding:15px;
+	color:blueviolet;
+	font-size:15px;
+	font-family:"Lucida Handwriting";
+	}
+
+	*{box-sizing:border-box;
+	outline:none;
+	
+	}
+
+	
+	body{background-color:purple;}
+
+	.wrapper{position:absolute;
+	top:35%;
+	left:75%
+	/*transform:translate(-50%,-25%);*/
+	max-width:360px;
+	width:50%;
+	background-color:pink;
+	padding:25px;
+	border-radius:5px;
+	float:right;
+	}
+
+	.wrapper h2 {text-align:center;
+	margin-bottom:20px;
+	text-transformation:uppercase;
+	letter-spacing:3px;
+	color:blue;}
+
+	.wrapper .inputfeed{margin-bottom:10px;}
+
+	.wrapper .inputfeed input[type=text], .wrapper textarea{border:1px solid red;
+	width:100%;
+	padding:10px;}
+
+	.wrapper textarea{resize:none;
+	height:80px;}
+
+	.wrapper .button input[type=submit]
+	{border:0px;
+	margin-top:15px;
+	padding:10px;
+	text-align:center;
+	width:100%;
+	background-color:blue;
+	color:white;
+	text-trasform:uppercase;
+	letter-spacing:5px;
+	font-weight:bold;
+	border-radius:25px;
+	cursor:pointer;}
+
+	.wrapper .button input[type=reset]
+	{border:0px;
+	margin-top:15px;
+	padding:10px;
+	text-align:center;
+	width:100%;
+	background-color:blue;
+	color:white;
+	text-trasform:uppercase;
+	letter-spacing:5px;
+	font-weight:bold;
+	border-radius:25px;
+	cursor:pointer;}
+
+	#error_message{margin-bottom:20px;
+	background-color:yellow;
+	padding:0px;
+	text-align:center;
+	font-size:15px;
+	transition:all 0.5s ease;}
+
+
+	.footer{background-color:black;
+	text-align:center;
+	font-size:15px;
+	color:white;
+	padding:5px;
+	}
+
+	ul{list-style-type:none;
+	margin:0;
+	padding:0;
+	width:100%;
+	background-color:grey;
+	text-align:center;
+	font-family:"Arial";
+	}
+
+	li{display:inline;
+	padding:10px;}
+
+	a{text-decoration:none;
+	text-transform:uppercase;
+	font-size:15px;
+	color:whitesmoke;}
+
+	a:hover{color:pink;}
+	a:hover::before{width:100%;}
+	a::before{content:"";
+	display:block;
+	height:5px;
+	background-color:white;
+	position:absolute;
+	top:0px;
+	width:0%;
+	transition:all ease-in-out 250ms;}
+
+
+</style>
+</head>
+<body>
+
+<div class=header>
+	<img src=nebula-icon.png height=50 width=50>
+	<h1> the "everything about space" website </h1>
+
+</div>
+
+<ul>
+	
+	<li><a href="space.html">Home</a></li>
+	
+	<li><a href="space page 2.html">About The Planets In Our Solar System</a></li>
+	<li><a href="space page table.html">About Moons Of Other PLanets</a></li>
+	<li><a href="contact us trial.html">Contact Us</a></li>
+</ul>
+
+<div class=wrapper>
+	<h2>contact us</h2>
+	<form id=myform onsubmit="return validate();"method=post 	action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSckQU7eamlfWqbVQa2NIGz3yU1z8A8gsIGzhu6dMXcZTo5OIg/formResponse">
+	<div class=inputfeed>
+	<input type=text placeholder="Name" id=first_name name="entry.597815788"></div>
+
+	<div class=inputfeed>
+	<input type=text placeholder="phone" id=phone name="entry.1405031210"></div>
+
+	<div class=inputfeed>
+	<input type=text placeholder="email_id" id=email_id name="entry.1500264725"></div>
+
+	<div class=inputfeed>
+	<textarea placeholder="message" id="message"  name="entry.1959353947"></textarea></div>
+
+	<div class=button>
+	<input type="submit"></div>
+
+	<div class=button>
+	<input type="reset"></div>
+	<br>
+	<br>
+	<br>
+	<div id=error_message></div>
+	</form>
+	
+</div>
+<br>
+<br>
+
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class=footer> to know more about the outerspace 
+<a href="https://solarsystem.nasa.gov/">click here</a> 
+</div>
+</body>
+</html>

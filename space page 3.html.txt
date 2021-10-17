@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+	.header{background-color:black;
+	text-align:center;
+	padding:20px;
+	color:blueviolet;
+	}
+	.middle{padding:200px;
+	background-image:url('dark space.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	opacity:0.9;
+	color:white;
+	}
+	.wrapper{padding:50px;
+	text-align:center;
+	background-color:rebeccapurple;
+	color:snow;
+	width:1000px;
+	height:3000px;
+	border: 5px solid purple;
+	opacity:0.8;
+	box-sizing:border-box;
+	}
+	.content{background-color:mediumpurple;
+	opacity:0.5
+	font-family:Arial,"Times New Roman","Lucida Handwriting";
+	font-size:10px;
+	padding:5px;
+	color:whitesmoke;
+	}
+	.footer{background-color:black;
+	text-align:center;
+	font-size:15px;
+	color:white;
+	padding:5px;
+	}
+	body{border:5px purple dotted;}
+
+	.styled-table{border-collapse:collapse;
+	margin:15px;
+	font-family:Arial,"Times New Roman","Lucida Handwriting";
+	font-size:10px;
+	width:100%
+	box-shadow:0 0 20px rbg(0,0,0, 0.15)}
+</style>
+</head>
+<body>
+<div class=header>
+	<img src=nebula-icon.png height=50 width=50>
+	<h1> the "everything about space" website </h1>
+</div>
+<div class=wrapper>
+	
+	<table border=1 class=styled-table>
+	<th colspan=14>
+	<h2> moons of the planets in our solar system</h2>
+	</th>
+	<tr>
+	<td colspan=4>
+	img of moon 
+	</td>
+	<td colspan=4>
+	distance from earth
+	</td>
+	<td colspan=4>
+	which planet's moon
+	</td>
+	<td colspan=4>
+	info of the moon 
+	</td>
+	</tr>
+
+	<tr>
+	<td colspan=4>
+	img of moon 
+	</td>
+	<td colspan=4>
+	distance from earth
+	</td>
+	<td colspan=4>
+	which planet's moon
+	</td>
+	<td colspan=4>
+	info of the moon 
+	</td>
+	</tr>
+
+	</table>
+	
+
+
+</div>
+<div class=footer> to know more about the outerspace 
+	<a href="https://solarsystem.nasa.gov/">click here</a> 
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
